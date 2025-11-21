@@ -7,5 +7,5 @@ For more information about the research please contact any of authors via email:
 Contents:
 <ul>
 <li>Folder instances: contains two groups of instances used in the paper: random graphs, trees and wireless</li>
-<li>Folder results: constains results on the instances obtained by all models presented in the paper<\li>
+<li>Folder results-all: constains results on the instances obtained by all models presented in the paper<\li>
   </ul>
