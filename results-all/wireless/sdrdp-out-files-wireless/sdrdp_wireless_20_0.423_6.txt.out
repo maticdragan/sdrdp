@@ -1,0 +1,9 @@
+obj: 3.000000 time: 0.006206 gap: 50.000000 iter: 34
+obj: 2.000000 time: 0.019475 gap: 0.000000 iter: 117
+
+obj: 2 time: 0.01966
+V1:  1 4 10 12 13 18 19
+V2:  1 4 12 13 18 19
+V3:  1 19
+gap: 0
+status: feasible
