@@ -1,0 +1,37 @@
+Los Angeles
+https://catalog.data.gov/dataset/crime-data-from-2020-to-present
+
+
+New Orleans
+https://catalog.data.gov/dataset/calls-for-service-2013
+
+Chicago - imaju dva izvoda - možda pustiti ponovo, ali i ne mora
+https://catalog.data.gov/dataset/crimes-2001-to-present
+https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2/data_preview
+
+Montreal
+https://www.kaggle.com/datasets/stevieknox/montreal-crime-data
+
+
+Toronto  (toronto2)
+https://www.kaggle.com/datasets/aayushsin7a/toronto-crime-major-crime
+
+Calgary
+https://www.kaggle.com/datasets/tcashion/calgary-crime-statistics
+
+Philadelphia
+https://www.kaggle.com/datasets/mchirico/philadelphiacrimedata
+
+Orlando
+https://www.kaggle.com/datasets/idalton/orlando-crimes
+
+
+Methodology for Identifying and Mapping Crime Rates
+
+To integrate real-world social dynamics into the model, the study incorporates spatially grounded crime data to assign crime intensity levels to nodes of urban graphs. For each city, geospatial crime records were obtained from official or publicly accessible open-data portals. The datasets include the geographic coordinates (latitude and longitude) of individual criminal incidents, which were used to determine the spatial distribution of crime within the urban area.
+
+The preprocessing procedure involved the following steps. First, each city’s administrative or statistical subdivisions were extracted from the corresponding GeoJSON files, representing the underlying urban topology. Using the Queen adjacency criterion, a graph was constructed in which two polygons (urban regions) are connected by an edge if they share at least one boundary point. The centroid of each polygon was then considered as a node of the resulting graph.
+
+Next, crime incident coordinates were projected into the same coordinate reference system (CRS) as the polygonal map of the city. A spatial join operation was performed to associate each incident with the polygon (and consequently the node) within which it occurred. The number of incidents assigned to each polygon defines the crime count of the corresponding node, serving as an empirical measure of local crime rate. Nodes with no recorded incidents were assigned a value of zero. This approach ensures that each node encapsulates both its structural position in the urban network and its contextual social vulnerability.
+
+Crime datasets were sourced from multiple official repositories, depending on data availability for each city. Specifically, crime records for Los Angeles were obtained from the Los Angeles Open Data Portal (data.lacity.org), those for New Orleans from the City of New Orleans Open Data Portal (data.nola.gov), for Chicago from the City of Chicago Data Portal (data.cityofchicago.org), for Toronto from the Toronto Police Service Public Safety Data Portal (data.torontopolice.on.ca), and for Montreal from the Ville de Montréal Open Data Platform (donnees.montreal.ca). All datasets were filtered to include only incidents with valid geographic coordinates and were standardized to a uniform spatial format prior to analysis.
