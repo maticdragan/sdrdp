@@ -1,5 +1,4 @@
-# Bridging Synthetic and Real-World Graph Scenarios via Integer Programming
-### A Spatial Optimization Perspective on the Signed Double Roman Domination Problem
+## Bridging Synthetic and Real-World Graph Scenarios via Integer Programming:  A Spatial Optimization Perspective on the Signed Double Roman Domination Problem
 
 This repository contains benchmark instances and raw experimental results for three integer linear programming (ILP) models developed to solve the **Signed Double Roman Domination (SDRD)** problem.
 
